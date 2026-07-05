@@ -439,7 +439,7 @@ em{font-style:italic}
   display:flex;align-items:center;justify-content:center;
   color:var(--off-white);
 }
-.geb-social-icon svg{width:16px;height:16px}
+.geb-social-icon svg{width:14px;height:14px}
 .geb-social-icon--gold{color:var(--gold)}
 
 .geb-footer-divider{
