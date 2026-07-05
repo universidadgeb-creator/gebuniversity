@@ -11,7 +11,6 @@
   --muted-gray: #8892A8;
   --faint-gray: #7C879E;
   --nav-secondary: #C9D1E0;
-  --purple: #9D8CE0;
 
   --border-light: rgba(255,255,255,.08);
   --border-light-strong: rgba(255,255,255,.14);
@@ -95,6 +94,23 @@ em{font-style:italic}
   border-color:transparent;
 }
 .geb-pill--active:hover{background:rgba(255,255,255,.14)}
+.geb-pill--disabled{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--faint-gray);
+  border-color:rgba(255,255,255,.08);
+  cursor:default;
+}
+
+.geb-soon-tag{
+  padding:3px 9px;
+  border-radius:var(--radius-pill);
+  background:rgba(217,164,85,.12);
+  color:var(--gold);
+  font:700 9px var(--font-sans);
+  letter-spacing:.08em;
+}
 
 .geb-nav-burger{
   display:none;
@@ -128,6 +144,13 @@ em{font-style:italic}
   border-bottom:1px solid var(--border-light);
 }
 .geb-mobile-link--active{color:var(--gold)}
+.geb-mobile-link--disabled{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:var(--faint-gray);
+  cursor:default;
+}
 
 /* ============================
    Hero
@@ -388,6 +411,12 @@ em{font-style:italic}
 .geb-footer-links a{transition:color .2s ease}
 .geb-footer-links a:hover{color:var(--off-white)}
 .geb-footer-links--active{color:var(--gold) !important}
+.geb-footer-links--disabled{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--faint-gray);
+}
 
 .geb-social-list{
   display:flex;
@@ -425,12 +454,6 @@ em{font-style:italic}
   font:400 12px var(--font-sans);
   color:var(--faint-gray);
 }
-
-.geb-footer-admin{
-  color:var(--purple);
-  transition:opacity .2s ease;
-}
-.geb-footer-admin:hover{opacity:.8}
 
 /* ============================
    Responsive (tablet/mobile) — breakpoint 900px
