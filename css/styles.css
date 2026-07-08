@@ -225,6 +225,24 @@ em{font-style:italic}
 }
 .geb-cta:hover{transform:translateY(-2px); filter:brightness(1.06); box-shadow:0 10px 24px -10px rgba(217,164,85,.6)}
 
+.geb-cta--outline{
+  background:transparent;
+  color:var(--gold);
+  border:1px solid var(--border-gold);
+}
+.geb-cta--outline:hover{box-shadow:0 10px 24px -10px rgba(217,164,85,.35)}
+
+.geb-cta--disabled{
+  background:var(--navy-alt);
+  color:var(--lavender-gray);
+  border:1px solid var(--border-light);
+  cursor:not-allowed;
+  opacity:.6;
+}
+.geb-cta--disabled:hover{transform:none; filter:none; box-shadow:none}
+
+.geb-product-body + .geb-cta{margin-top:24px}
+
 .geb-hero-cta{margin-top:36px}
 
 .geb-arrow{transition:transform .25s ease; display:inline-block}
@@ -361,6 +379,10 @@ em{font-style:italic}
   border-radius:var(--radius-card);
   padding:36px;
   text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:14px;
 }
 .geb-quote-card-title{
   font:400 20px var(--font-serif);
